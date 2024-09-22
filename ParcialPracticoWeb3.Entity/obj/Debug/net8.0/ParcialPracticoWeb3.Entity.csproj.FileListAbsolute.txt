@@ -1,0 +1,11 @@
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\bin\Debug\net8.0\ParcialPracticoWeb3.Entity.deps.json
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\bin\Debug\net8.0\ParcialPracticoWeb3.Entity.dll
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\bin\Debug\net8.0\ParcialPracticoWeb3.Entity.pdb
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\ParcialPracticoWeb3.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\ParcialPracticoWeb3.Entity.AssemblyInfoInputs.cache
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\ParcialPracticoWeb3.Entity.AssemblyInfo.cs
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\ParcialPracticoWeb3.Entity.csproj.CoreCompileInputs.cache
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\ParcialPracticoWeb3.Entity.dll
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\refint\ParcialPracticoWeb3.Entity.dll
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\ParcialPracticoWeb3.Entity.pdb
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Entity\obj\Debug\net8.0\ref\ParcialPracticoWeb3.Entity.dll

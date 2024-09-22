@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ParcialPracticoWeb3.Web/1.0.0": {
+        "dependencies": {
+          "ParcialPracticoWeb3.Entity": "1.0.0",
+          "ParcialPracticoWeb3.Logic": "1.0.0"
+        },
+        "runtime": {
+          "ParcialPracticoWeb3.Web.dll": {}
+        }
+      },
+      "ParcialPracticoWeb3.Entity/1.0.0": {
+        "runtime": {
+          "ParcialPracticoWeb3.Entity.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ParcialPracticoWeb3.Logic/1.0.0": {
+        "dependencies": {
+          "ParcialPracticoWeb3.Entity": "1.0.0"
+        },
+        "runtime": {
+          "ParcialPracticoWeb3.Logic.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ParcialPracticoWeb3.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ParcialPracticoWeb3.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ParcialPracticoWeb3.Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
