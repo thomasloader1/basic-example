@@ -34,3 +34,4 @@ C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Web\bin\Debu
 C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Web\bin\Debug\net8.0\ParcialPracticoWeb3.Logic.pdb
 C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Web\obj\Debug\net8.0\ParcialPracticoWeb3.Web.csproj.AssemblyReference.cache
 C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Web\obj\Debug\net8.0\ParcialP.9CC84613.Up2Date
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Web\obj\Debug\net8.0\ParcialPracticoWeb3.Web.sourcelink.json

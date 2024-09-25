@@ -1,7 +1,12 @@
+using ParcialPracticoWeb3.Logic;
+using ParcialPracticoWeb3.Logic.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<IVentaLogic, VentaLogic>();
 
 var app = builder.Build();
 

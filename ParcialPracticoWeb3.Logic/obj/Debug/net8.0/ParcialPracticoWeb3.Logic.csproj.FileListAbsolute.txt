@@ -13,3 +13,4 @@ C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Logic\obj\De
 C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Logic\obj\Debug\net8.0\refint\ParcialPracticoWeb3.Logic.dll
 C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Logic\obj\Debug\net8.0\ParcialPracticoWeb3.Logic.pdb
 C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Logic\obj\Debug\net8.0\ref\ParcialPracticoWeb3.Logic.dll
+C:\Users\talkt\source\repos\ParcialPracticoWeb3\ParcialPracticoWeb3.Logic\obj\Debug\net8.0\ParcialPracticoWeb3.Logic.sourcelink.json

@@ -1,107 +1,50 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using ParcialPracticoWeb3.Logic;
+﻿using Microsoft.AspNetCore.Mvc;
+using ParcialPracticoWeb3.Logic.Interfaces;
 using ParcialPracticoWeb3.Web.Models;
 
 namespace ParcialPracticoWeb3.Web.Controllers;
 
 public class VentasController : Controller
 {
-    private VentaLogic _vlogic;
-    public VentasController(VentaLogic vlogic)
+    private IVentaLogic _vlogic;
+    public VentasController(IVentaLogic vlogic)
     {
         _vlogic = vlogic;
     }
-    // GET: VentasController
-    public ActionResult Index()
-    {
-        return View();
-    }
-
-    public ActionResult RegistrarVenta()
-    {
-        return View();
-    }
     
+    [HttpGet]
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+    [HttpGet]
+    public IActionResult RegistrarVenta() {
+
+        return View();
+
+    }
+
     [HttpPost]
-    public ActionResult CalcularVenta(VentasViewModel vvm)
+    public IActionResult RegistrarVenta(VentasViewModel vm)
     {
-
-        _vlogic.calcular(vvm);
-        return View();
-    }
-
-
-    public ActionResult Resultados()
-    {
-        return View();
-    }
-    // GET: VentasController/Details/5
-    public ActionResult Details(int id)
-    {
-        return View();
-    }
-
-    // GET: VentasController/Create
-    public ActionResult Create()
-    {
-        return View();
-    }
-
-    // POST: VentasController/Create
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public ActionResult Create(IFormCollection collection)
-    {
-        try
+        if (!ModelState.IsValid)
         {
-            return RedirectToAction(nameof(Index));
+            return View(vm);
         }
-        catch
-        {
-            return View();
-        }
+
+        _vlogic.SaveVenta(VentasViewModel.ParseFromViewModel(vm));
+
+        return RedirectToAction("Resultados");
+
     }
 
-    // GET: VentasController/Edit/5
-    public ActionResult Edit(int id)
-    {
-        return View();
-    }
 
-    // POST: VentasController/Edit/5
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public ActionResult Edit(int id, IFormCollection collection)
+    [HttpGet]
+    public IActionResult Resultados()
     {
-        try
-        {
-            return RedirectToAction(nameof(Index));
-        }
-        catch
-        {
-            return View();
-        }
+        var sales = _vlogic.Results();
+        return View(VentasViewModel.FromVenta(sales));
     }
-
-    // GET: VentasController/Delete/5
-    public ActionResult Delete(int id)
-    {
-        return View();
-    }
-
-    // POST: VentasController/Delete/5
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public ActionResult Delete(int id, IFormCollection collection)
-    {
-        try
-        {
-            return RedirectToAction(nameof(Index));
-        }
-        catch
-        {
-            return View();
-        }
-    }
+  
 }

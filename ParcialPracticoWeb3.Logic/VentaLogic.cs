@@ -1,26 +1,22 @@
 ﻿using ParcialPracticoWeb3.Entity;
+using ParcialPracticoWeb3.Logic.Interfaces;
 using System.ComponentModel;
 
 
 namespace ParcialPracticoWeb3.Logic;
 
-public class VentaLogic
+public class VentaLogic: IVentaLogic
 {
-    private static List<Venta> _ventaList = new List<Venta>();
-    public List<Venta> Resultados()
-    {
+    private List<Venta> _ventaList = new List<Venta>();
 
-        return _ventaList.OrderBy(x => x.IdVenta).ToList();
-        
+    public void SaveVenta(Venta v)
+    {
+        v.SaleId = _ventaList.Count == 0 ? 1 : _ventaList.Max(x => x.SaleId) + 1;
+        _ventaList.Add(v);
     }
 
-    public static void AgregarVenta(Venta venta)
+    public List<Venta> Results()
     {
-        venta.IdVenta = _ventaList.Count == 0 ? 1 : _ventaList.Max(x => x.IdVenta) + 1;
-        _ventaList.Add(venta);
-
+        return _ventaList.OrderBy(x => x.SaleId).ToList();
     }
-
-   public static List<Venta> calcular()
-   
 }
